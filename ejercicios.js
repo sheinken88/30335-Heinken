@@ -90,3 +90,23 @@ let insertNumber2 = parseInt(prompt("Insert second number"));
 if ((insertNumber1 + insertNumber2 == 10) && (insertNumber1 % insertNumber2 == 0)) {
     alert("Ok");
 }
+
+
+//Pedirle al usuario que ingrese un número, realizar un conteo hacia atrás hasta llegara 0 pero sólo mostrando los números que son pares.
+
+function countdown () {
+
+    let insertNumber = parseInt(prompt("Insert positive number"))
+
+for (let i = insertNumber; i > 0; i--) {
+    alert(i);
+
+    if (insertNumber < 0) {
+        break;
+    }
+}
+
+
+} 
+
+countdown();
